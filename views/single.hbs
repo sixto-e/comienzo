@@ -1,0 +1,41 @@
+<h1>alumno:</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Matricula</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">carrera</th>
+      <th scope="col">volver</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+       {{#each aluSingle}}
+    <tr>
+      <td>{{matricula}}</td>
+      <td>{{nombre}}</td>
+      <td>{{carrera}}</td>
+      <td><a href="/alumnos">volver</a></td>
+    </tr>
+      {{/each}}
+  </tbody>
+
+</table>
+<h2>materias tomadas:</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Materias</th>
+  
+    </tr>
+  </thead>
+ 
+  <tbody>
+       {{#each Amaterias}}
+    <tr>
+      <td>{{materia}}</td>
+
+    </tr>
+      {{/each}}
+  </tbody>
